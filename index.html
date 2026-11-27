@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi página web</title>
+
+    <style>
+        /* Configuración general */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Banner superior */
+        .banner {
+            background-color: #0066CC;
+            padding: 15px 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Logo */
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+
+        /* Contenedor de botones */
+        .menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Estilo de los botones */
+        .menu a {
+            color: white;
+            text-decoration: none;
+
+            padding: 12px 18px;
+
+            border: 1px solid white;
+            border-radius: 6px;
+
+            transition: 0.3s;
+        }
+
+        /* Efecto cuando pasamos el mouse */
+        .menu a:hover {
+            background-color: white;
+            color: #0066CC;
+        }
+
+        /* Contenido principal */
+        main {
+            padding: 40px;
+        }
+
+        /* Ajuste para celulares */
+        @media (max-width: 750px) {
+
+            .banner {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Banner superior -->
+    <header class="banner">
+
+        <!-- Logo -->
+        <img src="logo.png"
+             alt="Logo de la empresa"
+             class="logo">
+
+        <!-- Menú -->
+        <nav class="menu">
+
+            <a href="#planes">
+                Planes de servicio
+            </a>
+
+            <a href="#cobertura">
+                Cobertura
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+
+            <a href="#marco-legal">
+                Marco legal
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section id="planes">
+            <h2>Planes de servicio</h2>
+            <p>Consulta nuestros diferentes planes de servicio.</p>
+        </section>
+
+        <section id="cobertura">
+            <h2>Cobertura</h2>
+            <p>Consulta nuestra zona de cobertura.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Contáctanos para solicitar información.</p>
+        </section>
+
+        <section id="marco-legal">
+            <h2>Marco legal</h2>
+            <p>Consulta nuestra información legal.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
